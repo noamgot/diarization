@@ -1,0 +1,49 @@
+[project]
+name = "diarization"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "loguru>=0.7.3",
+    "pyannote-audio>=3.3.2",
+    "pyannote-metrics>=3.2.1",
+    "torch>=2.7.0",
+    "torchaudio>=2.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "ipython>=9.2.0",
+    "ipywidgets>=8.1.7",
+    "matplotlib>=3.10.3",
+    "ruff>=0.11.9",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+torchaudio = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff]
+force-exclude = true
+line-length = 120
+
+# ruff lint rules: https://docs.astral.sh/ruff/rules/
+[tool.ruff.lint]
+select = [
+  "E4",
+  "E7",
+  "E9",
+  "F",
+  "I",
+] # Enable isort (`I`) sorting rules, in addition to the defaults.
