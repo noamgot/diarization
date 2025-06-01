@@ -67,13 +67,13 @@ def main(
     output_dir.mkdir(parents=True, exist_ok=True)
     name = Path(audio_file).stem
     overlap_timeline = get_asr_vad_overlap(
-        name, audio_file, asr_json, draw=draw, trim_silence_window_ms=trim_silence_window_ms
+        name, audio_file, output_dir, asr_json, draw=draw, trim_silence_window_ms=trim_silence_window_ms
     )
     overlap_annotation = timeline_to_single_label_annotation(overlap_timeline, label=name)
     overlap_annotation.uri = name
     output_rttm = output_dir / f"{name}.rttm"
     Path(output_rttm).write_text(overlap_annotation.to_rttm())
-    logger.succes(f"Done! Overlap segments saved to {output_rttm}")
+    logger.success(f"Done! Overlap segments saved to {output_rttm}")
 
 
 def parse_args():
