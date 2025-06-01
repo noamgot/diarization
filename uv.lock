@@ -148,7 +148,7 @@ version = "2025.4.26"
 source = { registry = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/simple" }
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/e8/9e/c05b3920a3b7d20d3d3310465f50348e5b3694f4f88c6daf736eef3024c4/certifi-2025.4.26.tar.gz", hash = "sha256:0a816057ea3cdefcef70270d2c515e4506bbc954f417fa5ade2021213bb8f0c6" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/4a/7e/3db2bd1b1f9e95f7cddca6d6e75e2f2bd9f51b1246e546d88addca0106bd/certifi-2025.4.26-py3-none-any.whl", hash = "sha256:30350364dfe371162649852c63336a15c70c6510c2ad5015b21c2345311805f3" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/certifi/2025.4.26/certifi-2025.4.26-py3-none-any.whl", hash = "sha256:30350364dfe371162649852c63336a15c70c6510c2ad5015b21c2345311805f3" },
 ]
 
 [[package]]
@@ -353,6 +353,7 @@ dependencies = [
     { name = "torch", version = "2.7.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "sys_platform != 'darwin'" },
     { name = "torchaudio", version = "2.7.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or sys_platform == 'darwin'" },
     { name = "torchaudio", version = "2.7.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine != 'aarch64' and sys_platform == 'linux') or (sys_platform != 'darwin' and sys_platform != 'linux')" },
+    { name = "tqdm" },
 ]
 
 [package.dev-dependencies]
@@ -372,6 +373,7 @@ requires-dist = [
     { name = "pyannote-metrics", specifier = ">=3.2.1" },
     { name = "torch", specifier = ">=2.7.0", index = "https://download.pytorch.org/whl/cpu" },
     { name = "torchaudio", specifier = ">=2.7.0", index = "https://download.pytorch.org/whl/cpu" },
+    { name = "tqdm", specifier = ">=4.67.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -613,7 +615,7 @@ version = "3.10"
 source = { registry = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/simple" }
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/idna/3.10/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3" },
 ]
 
 [[package]]
@@ -867,7 +869,7 @@ dependencies = [
 ]
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/3a/05/a1dae3dffd1116099471c643b8924f5aa6524411dc6c63fdae648c4f1aca/loguru-0.7.3.tar.gz", hash = "sha256:19480589e77d47b8d85b2c827ad95d49bf31b0dcde16593892eb51dd18706eb6" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/0c/29/0348de65b8cc732daa3e33e67806420b2ae89bdce2b04af740289c5c6c8c/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/loguru/0.7.3/loguru-0.7.3-py3-none-any.whl", hash = "sha256:31a33c10c8e1e10422bfd431aeb5d351c7cf7fa671e3c4df004162264b28220c" },
 ]
 
 [[package]]
@@ -1523,7 +1525,7 @@ dependencies = [
 ]
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/66/c0/0c8b6ad9f17a802ee498c46e004a0eb49bc148f2fd230864601a86dcf6db/python-dateutil-2.9.0.post0.tar.gz", hash = "sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/python-dateutil/2.9.0.post0/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427" },
 ]
 
 [[package]]
@@ -1672,7 +1674,7 @@ dependencies = [
 ]
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/63/70/2bf7780ad2d390a8d301ad0b550f1581eadbd9a20f896afe06353c2a2913/requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/requests/2.32.3/requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6" },
 ]
 
 [[package]]
@@ -1866,7 +1868,7 @@ version = "1.17.0"
 source = { registry = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/simple" }
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/six/1.17.0/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274" },
 ]
 
 [[package]]
@@ -2215,7 +2217,7 @@ version = "4.13.2"
 source = { registry = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/simple" }
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/f6/37/23083fcd6e35492953e8d2aaaa68b860eb422b34627b13f2ce3eb6106061/typing_extensions-4.13.2.tar.gz", hash = "sha256:e6c81219bd689f51865d9e372991c540bda33a0379d5573cddb9a3a23f7caaef" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/8b/54/b1ae86c0973cc6f0210b53d508ca3641fb6d0c56823f288d108bc7ab3cc8/typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/typing-extensions/4.13.2/typing_extensions-4.13.2-py3-none-any.whl", hash = "sha256:a439e7c04b49fec3e5d3e2beaa21755cadbbdc391694e28ccdd36ca4a1408f8c" },
 ]
 
 [[package]]
@@ -2233,7 +2235,7 @@ version = "2.4.0"
 source = { registry = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/simple" }
 sdist = { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/8a/78/16493d9c386d8e60e442a35feac5e00f0913c0f4b7c217c11e8ec2ff53e0/urllib3-2.4.0.tar.gz", hash = "sha256:414bc6535b787febd7567804cc015fee39daab8ad86268f1310a9250697de466" }
 wheels = [
-    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/packages/packages/6b/11/cc635220681e93a0183390e26485430ca2c7b5f9d33b15c74c2861cb8091/urllib3-2.4.0-py3-none-any.whl", hash = "sha256:4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813" },
+    { url = "https://artifactory.sddc.mobileye.com/artifactory/api/pypi/pypi/urllib3/2.4.0/urllib3-2.4.0-py3-none-any.whl", hash = "sha256:4e16665048960a0900c702d4a66415956a584919c03361cac9f1df5c5dd7e813" },
 ]
 
 [[package]]
